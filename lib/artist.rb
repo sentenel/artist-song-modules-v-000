@@ -1,6 +1,9 @@
 require 'pry'
+require_relative '../config/environment.rb'
 
 class Artist
+  extend Memorable
+
   attr_accessor :name
   attr_reader :songs
 
